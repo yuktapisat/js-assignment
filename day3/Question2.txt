@@ -1,0 +1,70 @@
+Question 2 ) Write the difference between var , let and const with code examples.
+
+var -
+The var statement declares a variable.
+Variables are container for storing information.
+It has global scope.
+
+Examples -
+
+a) var a = { name : "xyz" , age : "20" , city : "mumbai" }
+
+b) var string
+
+	var name = "yukta";
+
+c) var number
+
+	var age = 24;
+
+d) var boolean 
+
+	var canfly = false;
+
+e) var array
+
+	var cities = ['mumbai' , 'delhi' , 'pune' , 'thane'};
+
+f) var objects
+	
+	var student = {
+			name : "abc"
+			hobby: "coding"
+		      }
+
+let - 
+
+In the creation phase, the let variables are assigned storage spaces but are not initialized.
+It has local scope.
+Variables declared inside a block {} cannot be accessed from outside the block.
+
+Examples - 
+
+1)
+{
+  let x = 2;
+}
+
+2)
+let i = 5;			//global
+for (let i = 0; i < 10; i++)	//local
+{
+console.log(i)
+}
+
+
+const -
+It is basically constant whose value cannot be changed.
+Variables defined with const behave like let variables, except they cannot be reassigned.
+avaScript const variables must be assigned a value when they are declared.
+ Example -
+
+	const PI = 3.14159265359;
+
+You can change the elements of a constant array.
+But you can NOT reassign a constant array
+
+Examples -
+	const cars = ["Saab", "Volvo", "BMW"];
+	cars[0] = "Toyota";				//You can change an element
+	cars.push("Audi");				// You can add an element

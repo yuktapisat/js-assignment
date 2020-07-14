@@ -1,0 +1,58 @@
+Question 3 ) write a brief intro on available datatypes in Javascript.
+
+DATATYPES IN JAVASCRIPT -
+
+1) Javascript Booleans 
+	Booleans can only have two values " true or false
+	Booleans are often used in conditional testing.
+
+Examples -
+	var s = 7;
+	var b = 7;
+	(s == b) 	//true
+
+2) Javascript Arrays -
+	JavaScript arrays are written with square brackets.
+	Array items are separated by commas.
+	Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
+
+Example -
+	var flowers = ['lotus' , 'rose' , 'sunflower'];
+
+3) Javascript Objects -
+	JavaScript objects are written with curly braces {}.
+	Object properties are written as  "name:value"  pairs , separated by commas.
+
+Example -
+	var employee = { name:"pqr" , age :"30" , city : "mumbai" , designation : "manager"}
+
+	The object (person) in the example above has 4 properties: name, age, city and designation.
+
+4) Undefined -
+	In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+	Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+
+Example - 
+
+	1)
+		var car;    // Value is undefined, type is undefined 
+
+	2) 
+		car = undefined;    // Value is undefined, type is undefined 
+
+5) Empty 
+	An empty value has nothing to do with undefined.
+	An empty string has both a legal value and a type.
+
+Example -
+	var car = ""; 
+
+6) Null - 
+	In JavaScript null is "nothing". 
+	It is supposed to be something that doesn't exist.
+	In JavaScript, the data type of null is an object.
+
+Example -
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person = null;

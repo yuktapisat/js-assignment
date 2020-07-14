@@ -1,0 +1,111 @@
+Question 1)  explore and explain the various methods in console function 
+
+The console provides us with diffrent methods like -
+
+1)console.log -
+
+	The console.log() method writes a message to the console. The console is useful for testing purposes.
+	
+	Syntax - 
+		console.log(X);
+
+	Parameters : It accepts parameter which can be an array , an object or any message.
+
+	Return value : It returns the value of the parameter given.
+
+	Examples -->
+	a) Passing a number as a argument :
+		<script>
+		var a = 2;
+		console.log(a);
+		</script>
+	`
+	b) Passing a string as an argument :
+		<script>
+		var str = "LetsUpgrade";
+		console.log(str);
+		</script>
+
+	c) passing a char as an argument :
+		<script>
+		var ch = '13';
+		console.log(ch);
+		</script>
+
+	d) passing a function as an argument :
+		<script>
+		function func()
+		{
+			return (5 * 19);
+		}
+		console.log(func());
+		</script>
+		
+2)console.error -
+
+	The console.error() methods writes an error message to the console.
+	By default the error message will be highlighted with red color.
+
+	Syntax -
+		console.error(z);
+
+	example -->
+
+	console.error('This is an Error ');
+
+3)console.warn -
+
+	The console.warn() method writes a warning to the console.
+	 By default the warning message will be highlighted with yellow color.
+
+	Syntax -
+		console.warn(z);
+
+	Example -->
+
+	console.warn("This is a warning ");
+
+4)console.clear -
+
+	It is used to clear the console. 
+	The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned.
+
+	Syntax -
+		console.close();
+
+5)console.table -
+
+	This method allows us to generate a table inside a console. 
+	The input must be an array or an object which will be shown as a table.
+
+	Example -->
+
+	console.table({'car':1, 'bike':2}); 
+
+6)console.count -
+
+	console.count method is used to count the number that the function hit by this counting method.
+
+	Example -->
+
+	for(let i=0;i<10;i++)
+	{ 
+	    console.count(i); 
+	}
+
+7)console.time  and  console.timeEnd -
+
+	The console.time() method starts a timer in the console view.
+	This method allows you to time certain operations in your code for testing purposes.
+	The console.timeEnd() method ends a timer, and writes the result in the console view.
+	
+	Examples -->
+
+	i = 0;
+	console.time("test while loop");
+	(i < 1000000) 
+	{
+  		++
+	}
+	console.timeEnd("test while loop"); 
+ 
