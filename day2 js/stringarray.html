@@ -1,0 +1,88 @@
+<!-- Question 2 )Explain with examples the different methods of String and Array -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment
+	</title>
+</head>
+
+<body>
+<script>
+	//methods of strings
+	var str ="Hello World";
+	var s = str.charAt(0);
+	console.log(s)
+	
+	var n = str.charCodeAt(0);  	//display the unicode of the first character in the string
+	console.log(n)
+
+	var str1 = " Welcome";
+	var c = str.concat(str1);
+	console.log(c);
+	
+	var e  =  str.endsWith("World");
+	console.log(e);
+
+	var res = String.fromCharCode(65);
+	console.log(res);
+	
+	var a = str.includes("world");	//if the string includes the specified value
+	console.log(a);
+
+	var b =  str.repeat(2); 
+	console.log(b);
+
+	var d = str.replace("World", "Everyone");
+	console.log(d);
+
+	var f = str.search("Hello");
+	console.log(f);
+
+	var g = str.slice(0, 5);
+	console.log(g);
+
+	var h = str.substr(1, 4);		//xtract parts of the string
+	console.log(h);
+
+	var i = str.substring(1, 4);		// extract characters from the string
+	console.log(i);
+
+	//var p =  alert(str.trim());		//alert the string with removed whitespace
+	//console.log(p);
+
+	var q = str.valueOf();
+	console.log(q);
+
+
+//methods of array
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	console.log(fruits);
+
+	var z = fruits.toString();		//toString() method returns an array as a comma separated string:
+	console.log(z);
+
+	var x = fruits.join(" * ");
+	console.log(x);
+
+	var y = fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"
+	console.log(fruits);
+
+	var u = fruits.splice(0, 1);        // Removes the first element of fruits 
+	console.log(u);
+
+	var v = fruits[fruits.length] = "Berry";          // Appends "Berry" to fruits 	
+	console.log(fruits);
+
+	var t = fruits.push("Kiwi"); 
+	console.log(fruits);
+
+	var k = fruits.pop();              // Removes the last element ("Kiwi") from fruits 
+	console.log(k);
+</script>
+	
+
+</body>
+</html>
