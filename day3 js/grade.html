@@ -1,0 +1,38 @@
+<!-- Question 3 ) Write a program to take marks as input from the user and grade him accordingly. Use Conditional statements. Also the same code using switch or ternary -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>My Grade</title>
+</head>
+
+<body>
+<script>
+var marks = prompt("Enter Your marks --> ");
+
+//using if elseif else
+
+if (marks <= 100 && marks >= 80 )
+{
+	console.log(`Marks are ${marks} and grade is A ` );
+}
+else if ( marks <= 80  && marks >= 50)
+{
+	console.log(`Marks are ${marks} and grade is B ` );
+}
+else
+{
+	console.log(`Marks are ${marks} and grade is C ` );
+}
+
+//using ternary operator
+let result = (marks <= 100 && marks >= 80)? `Marks are ${marks} and grade is A `:
+	( marks <= 80  && marks >= 50)? `Marks are ${marks} and grade is B ` :
+	`Marks are ${marks} and grade is C `;
+console.log(result);
+
+</script>
+</body>
+</html>
