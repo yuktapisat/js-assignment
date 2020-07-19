@@ -1,0 +1,42 @@
+<!-- Question 1)Create a for loop that iterates up to 100 while outputting 
+"fizz" at multiples of 3 , "buzz" at multiples of 5 and "fizzbuzz" at 
+multiples of 3 and 5 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>loop</title>
+</head>
+
+<body>
+<script>
+
+for ( var num = 1; num <= 100; num++ )
+{
+  	if ( num % 3 === 0 && num % 5 === 0 )
+  	{
+    		console.log( num + " FizzBuzz" );
+  	}
+  	
+	else if ( num % 3 === 0 ) 
+  	{
+    		console.log(num + " Fizz" );
+  	}
+  	
+	else if ( num % 5 === 0 ) 
+  	{
+    		console.log(num + " Buzz" );
+  	}
+  
+	else
+  	{
+    		console.log(num);
+  	}
+}
+
+</script>
+</body>
+</html>
+

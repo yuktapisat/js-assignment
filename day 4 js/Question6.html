@@ -1,0 +1,36 @@
+<!-- Question 6)Rewrite the function using '?' or '//' Write a loop which 
+prompts for a number greater than 100. If the visitor enters another number 
+-ask them to input again.
+The loop must ask for a number until either the visitor enters a number 
+greater than 100 or cancles the input/enters an empty line.
+Here we can assume that the visitor only inputs numbers. 
+There's no need to implement a special handling for a non-numeric  
+input in this task -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>visitor input</title>
+</head>
+
+<body>
+<script>
+
+let num;
+do
+{
+
+num = prompt("Enter number greater than 100 " , 0);
+
+}while(num <= 100 && num );	
+
+/* -->num <= 100 – checks the entered value is still not greater than 100.
+--> && num -is false when num is null or a empty string. Then the while loop stops too.
+*/
+
+</script>
+</body>
+</html>
+

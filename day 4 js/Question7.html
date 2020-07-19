@@ -1,0 +1,43 @@
+<!--An integer number greater than 1 is called a prime if it cannot be divided 
+without a remainder by anything except 1 and itself
+In other words, n> 1 is a prime if it can't be evenly divide by anything except 1
+and n.
+For example, 5 is prime number, because it cannot be divided without a 
+remainder by 2 3 and 4
+Write the code which outputs prime numbers in the intervqal from 2 to n .
+for n = 10 the result will be 2,3,5,7.
+P.S. The code should work for any n  , not be hard tuned for any fixed value
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Prime Numbers</title>
+</head>
+
+<body>
+<h2>Enter the number to get prime numbers in interval from 2 to number entered.</h2>
+
+<script>
+
+let num = prompt("Enter a number ")
+
+Prime:
+for(var n = 2 ; n <= num ; n++)
+{
+	for (var m = 2 ; m < n; m++)
+	{
+		if (n % m == 0)
+		{
+			continue Prime;
+		}
+	}
+console.log(n);
+}
+
+</script>
+</body>
+</html> 
+<script>
