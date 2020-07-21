@@ -1,0 +1,79 @@
+<!-- Question 1) Write a program which does the following things:
+1. Takes a positive number from the user.
+2. Makes an array of numbers till the number given by user
+3. Use higher order function to filter the odd numbers
+4. Generate and array of the cubes of the filtered numbers
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width">
+	<title>Higher Order Function</title>
+</head>
+
+<body>
+<script>
+
+function isPos(num) {
+    return num >= 0;
+  }
+  var num;
+  while (1) {
+    num = prompt("Enter a number ");
+    if (num === null) {
+      alert("No number entered. ");
+      continue; 
+    }
+    num = parseInt(num, 10);
+    if (isNaN(num)) {
+      alert("Invalid number entered.");
+      continue;
+    }
+    break;
+  }
+  alert(isPos(num));
+
+  var inputArr = [];
+  var size = 6;
+  
+  for(var i=0; i<size; i++) {
+      inputArr[i] = prompt('Enter Element ' + (i+1));
+  }
+    console.log(inputArr);
+
+    function countBy(arr, fn) {
+        let oddCount = 0
+        let evenCount = 0
+        return arr.reduce(function(acc, nums) {
+          console.log(nums, fn(nums))
+          if (fn(nums) === "even") {
+            evenCount++;
+            acc['even'] = evenCount;
+          } else {
+            oddCount++;
+            acc['odd'] = oddCount;
+          }
+          return acc;
+        }, {}, 0)
+      
+      }
+      
+      function evenOdd(n) {
+        if (n % 2 === 0) return "even";
+        else return "odd";
+      }
+      var nums = [1, 2, 3, 4, 5];
+      console.log(countBy(nums, evenOdd));
+
+	Let cube = nums.map(function(el) 
+	{
+	return  el**3;
+	 })
+	console.log(cube);
+	
+
+</script>
+</body>
+</html>
