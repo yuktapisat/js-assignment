@@ -1,0 +1,70 @@
+<!-- write a program to generate a quote randomly and display it on the web pages in a proper format. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<meta name="viewport" content = "width=device-width">
+	<title>Quotes </title>
+
+<style> 
+            body {
+   background-color: teal;
+  color: white;
+  font-size:20px;
+  font-family: 'Playfair Display', Times New Roman;
+}
+
+#myquotes{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  width: 80%;
+  line-height: .5;
+}
+
+h1
+{
+	color:pink;
+}
+        </style> 
+
+</head>
+
+<body>
+	<h1 >Motivational Quotes </h1>
+	<div id = "myquotes">
+	<p class="quote">Wisdom Is Brought Out When  Faced With Hardship</p>
+	</div>
+
+	<button  id= "btn" onclick="newQuote()" >New Quotes </button>
+
+	<script>
+
+		var quotes = [
+		'We May Encounter Many Defeats But We Must Not Be Defeated. - Maya Angelou',
+		'With Guns You Can Kill Terrorists, With Education You Can Kill Terrorism - Malala Tousafzai' ,
+		'Arise! Awake! And Stop Not Until The Goal Is Reached - Swami Vivekanand',
+		'If The Deaf Are To Hear , Then Sound Has To Be Very Loud - Bhagat Singh',
+		'Never Feel Sad About Losing Anything In L:ife Beacause Whenever A Tree Loses A Leaf, A New  Leaf Grows In Its Place - Abdul Kalam',
+		'If You Want To Live A Happy Life , Tie It To A Goal , Not To People Or Things - Albert Einstein',
+		'Tomorrow Is To Late Yesterday Is Over And Now Is Excatly The Right Moment To Start',
+		'Take The Stone People Throw At You , And Use Them To Build A Monument-Ratan Tata',
+		'The Goal Is Not To Be Better Than The Other Man , But Your Previous Self. - Dalai Lama',
+		'Do Not Wait For Anybody Or Anything. Do Whatever You Can , Build Your Hope On None - Swami Vivekanand',
+		'You never Fail Until You Stop Trying',
+		'If You Cannot Do Great Things , Do small Things In Great Way',
+		'Never Give Up Because Great Things Take Time',]		
+
+
+		function newQuote()
+		{
+		var randomnumber = Math.floor(Math.random() * (quotes.length));
+		document.getElementById('myquotes').innerHTML = quotes[randomnumber];
+		}	
+
+	</script>
+</body>
+</html>
+
